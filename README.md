@@ -1,3 +1,2 @@
-# aulaflutter_xdhl
-
-A new Flutter project.
+# MostraXDHLFlutter
+Trabalho Flutter Mostra Cultural
