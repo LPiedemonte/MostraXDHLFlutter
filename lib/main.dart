@@ -1,9 +1,12 @@
+import 'package:aulaflutter_xdhl/geografia.dart';
+import 'package:aulaflutter_xdhl/histcultura.dart';
 import 'package:flutter/material.dart';
 
 const List<String> list = <String>['One', 'Two', 'Three', 'Four'];
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MaterialApp (title: "App",
+      home: MainApp(),));
 }
 
 class MainApp extends StatelessWidget {
@@ -13,7 +16,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context){
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color.fromRGBO(255, 232, 198, 1),
+        backgroundColor: Color.fromRGBO(255, 205, 190, 1),
         appBar: AppBar(
           //define o titulo do app
           title: const Text(
@@ -41,7 +44,7 @@ class MainApp extends StatelessWidget {
         body: SingleChildScrollView( child:
          Center(
           child:SizedBox(
-            height: 1600, // Limita a altura
+            height: 900, // Limita a altura
             width: 400 , 
             child: Column(
            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -75,17 +78,25 @@ class MainApp extends StatelessWidget {
               )
             ),
 
+              Text(
+              '   O país tem climas predominantemente equatoriais e tropicais. Suas variações de temperatura variam muito conforme a altitude, sendo mais elevada nos litorais e extremamente frio pelos Andes. ',
+              style: TextStyle(
+                  color: Color.fromRGBO(0, 0, 0, 1),
+                  fontSize: 19,
+                  fontWeight: FontWeight.bold,
+              )
+            ),
 
-                SizedBox(
-                  height: 200, width: 200,
-                  child: CarouselView(
-                    scrollDirection: Axis.horizontal,
-                    itemExtent: 50,
-                    shrinkExtent: 200,
-                     children: <Widget>[ Image.asset('IMG/gatinhos.png')]
-                     
-                     ),
-                ),
+
+            Text(
+              '   Ela é um dos maiores exportadores de café arábica, carvão, petróleo e flores, tendo como principais rotas o meio marítimo e acordos com Mercosul e União Europeia.',
+              style: TextStyle(
+                  color: Color.fromRGBO(0, 0, 0, 1),
+                  fontSize: 19,
+                  fontWeight: FontWeight.bold,
+              )
+            ),
+              
 
             Text(
               'Quer saber mais sobre? Acesse nossas guias abaixo:',
@@ -100,11 +111,38 @@ class MainApp extends StatelessWidget {
           //o FormField disponibiliza mais recursos
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: Color.fromRGBO(165, 6, 6, 0.949)), // Cor de fundo do botão
+              backgroundColor: Color.fromRGBO(190, 100, 40, 0.945)), // Cor de fundo do botão
             onPressed:(){
+            Navigator.push(
+            context,
+            MaterialPageRoute(builder:
+            (context) => const Geografia()),
+            );
+            },
+
+           child: const Text(
+            'GEOGRAFIA', 
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 22,
+            ),
+            ),
+            ),
+
+             ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Color.fromRGBO(224, 152, 18, 0.941)), // Cor de fundo do botão
+            onPressed:(){
+            
+            Navigator.push(
+            context,
+            MaterialPageRoute(builder:
+            (context) => const Histcultura()),
+            );
+
             },
            child: const Text(
-            'Enviar', 
+            'HISTÓRIA E CULTURA', 
             style: TextStyle(
               color: Colors.white,
               fontSize: 22,
@@ -113,13 +151,13 @@ class MainApp extends StatelessWidget {
             ),
         
 
-  ]
-  ),
-    )
-      ),
-        )
-    )
-    );
+            ]
+          ),
+          )
+          ),
+          )
+          )
+          );
     
   }
 }
