@@ -13,7 +13,7 @@ const Geografia ({super.key});
             style: TextStyle(
               color: Color.fromRGBO(243, 243, 243, 1),
               fontSize: 34,
-              fontWeight: FontWeight.bold
+              fontFamily: 'FontdinerSwanky',
             ),
             ),
           centerTitle: true,
@@ -30,14 +30,14 @@ const Geografia ({super.key});
       body: SingleChildScrollView( child:
          Center(
           child:SizedBox(
-            height: 1180, // Limita a altura
+            height: 1370, // Limita a altura
             width: 400 , 
             child: Column(
            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             spacing: 20.0, 
            children:<Widget>[ 
              Image.asset(
-            'IMG/mapanomes.png',width: 606,height: 768,),
+            'IMG/mapanomes.png',width: 220,height: 370,),
 
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -46,9 +46,10 @@ const Geografia ({super.key});
               Text('❗  GEOLOGIA  ❗',
               style: TextStyle(
                 fontSize: 25,
+                fontFamily: 'MozillaText',
                 fontWeight: FontWeight.bold,
                 backgroundColor: Color.fromRGBO(0, 51, 146, 1),
-                color: Color.fromRGBO(243, 243, 243, 1)
+                color: Color.fromRGBO(243, 243, 243, 1),
               ),
               )
             ],
@@ -60,6 +61,7 @@ const Geografia ({super.key});
               style: TextStyle(
                   color: Color.fromRGBO(0, 0, 0, 1),
                   fontSize: 19,
+                  fontFamily: 'MozillaText',
                   fontWeight: FontWeight.bold,
               )
             ),
@@ -69,6 +71,7 @@ const Geografia ({super.key});
               style: TextStyle(
                   color: Color.fromRGBO(0, 0, 0, 1),
                   fontSize: 19,
+                  fontFamily: 'MozillaText',
                   fontWeight: FontWeight.bold,
               )
             ),
@@ -80,6 +83,7 @@ const Geografia ({super.key});
               Text('❗  CLIMA  ❗',
               style: TextStyle(
                 fontSize: 25,
+                fontFamily: 'MozillaText',
                 fontWeight: FontWeight.bold,
                 backgroundColor: Color.fromRGBO(0, 51, 146, 1),
                 color: Color.fromRGBO(243, 243, 243, 1)
@@ -93,6 +97,7 @@ const Geografia ({super.key});
               style: TextStyle(
                   color: Color.fromRGBO(0, 0, 0, 1),
                   fontSize: 19,
+                  fontFamily: 'MozillaText',
                   fontWeight: FontWeight.bold,
               )
             ),
@@ -108,6 +113,8 @@ const Geografia ({super.key});
           style: TextStyle(
               color: Colors.white,
               fontSize: 22,
+              fontFamily: 'MozillaText',
+              fontWeight: FontWeight.bold,
             ),),
         ),
 

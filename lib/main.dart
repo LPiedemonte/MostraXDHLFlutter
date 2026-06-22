@@ -15,16 +15,19 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return MaterialApp(
+      /*theme:ThemeData(
+        fontFamily:'HennyPenny' 
+      ),*/
       home: Scaffold(
         backgroundColor: Color.fromRGBO(255, 205, 190, 1),
         appBar: AppBar(
           //define o titulo do app
-          title: const Text(
+          title:Text(
             'COLÔMBIA',
             style: TextStyle(
               color: Color.fromRGBO(243, 243, 243, 1),
-              fontSize: 34,
-              fontWeight: FontWeight.bold
+              fontSize: 37,
+              fontFamily: 'FontdinerSwanky'
             ),
             ),
           //centraliza o titulo
@@ -44,7 +47,7 @@ class MainApp extends StatelessWidget {
         body: SingleChildScrollView( child:
          Center(
           child:SizedBox(
-            height: 900, // Limita a altura
+            height: 980, // Limita a altura
             width: 400 , 
             child: Column(
            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -59,6 +62,7 @@ class MainApp extends StatelessWidget {
               children: <Widget>[
               Text('❗  SOBRE O PAÍS  ❗',
               style: TextStyle(
+                fontFamily: 'MozillaText',
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
                 backgroundColor: Color.fromRGBO(0, 51, 146, 1),
@@ -74,6 +78,7 @@ class MainApp extends StatelessWidget {
               style: TextStyle(
                   color: Color.fromRGBO(0, 0, 0, 1),
                   fontSize: 19,
+                  fontFamily: 'MozillaText',
                   fontWeight: FontWeight.bold,
               )
             ),
@@ -83,6 +88,7 @@ class MainApp extends StatelessWidget {
               style: TextStyle(
                   color: Color.fromRGBO(0, 0, 0, 1),
                   fontSize: 19,
+                  fontFamily: 'MozillaText',
                   fontWeight: FontWeight.bold,
               )
             ),
@@ -93,6 +99,7 @@ class MainApp extends StatelessWidget {
               style: TextStyle(
                   color: Color.fromRGBO(0, 0, 0, 1),
                   fontSize: 19,
+                  fontFamily: 'MozillaText',
                   fontWeight: FontWeight.bold,
               )
             ),
@@ -102,6 +109,7 @@ class MainApp extends StatelessWidget {
               'Quer saber mais sobre? Acesse nossas guias abaixo:',
                 style: TextStyle(
                   fontSize: 17,
+                  fontFamily: 'MozillaText',
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.italic,
                 )
@@ -125,6 +133,7 @@ class MainApp extends StatelessWidget {
             style: TextStyle(
               color: Colors.white,
               fontSize: 22,
+              fontWeight: FontWeight.bold,
             ),
             ),
             ),
@@ -146,6 +155,7 @@ class MainApp extends StatelessWidget {
             style: TextStyle(
               color: Colors.white,
               fontSize: 22,
+              fontWeight: FontWeight.bold,
             ),
             ),
             ),

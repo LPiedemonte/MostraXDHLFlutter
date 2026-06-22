@@ -12,8 +12,8 @@ const Histcultura ({super.key});
             'HISTÓRIA E CULTURA',
             style: TextStyle(
               color: Color.fromRGBO(243, 243, 243, 1),
-              fontSize: 34,
-              fontWeight: FontWeight.bold
+              fontSize: 27,
+              fontFamily: 'FontdinerSwanky'
             ),
             ),
           centerTitle: true,
@@ -30,14 +30,14 @@ const Histcultura ({super.key});
       body: SingleChildScrollView( child:
          Center(
           child:SizedBox(
-            height: 1400, // Limita a altura
+            height: 1380, // Limita a altura
             width: 400 , 
             child: Column(
            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             spacing: 20.0, 
            children:<Widget>[ 
              Image.asset(
-            'IMG/cultura.png',width: 600,height: 200,),
+            'IMG/cult.png',width: 600,height: 200,),
 
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -47,6 +47,7 @@ const Histcultura ({super.key});
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
+                fontFamily: 'MozillaText',
                 backgroundColor: Color.fromRGBO(0, 51, 146, 1),
                 color: Color.fromRGBO(243, 243, 243, 1)
               ),
@@ -60,6 +61,7 @@ const Histcultura ({super.key});
               style: TextStyle(
                   color: Color.fromRGBO(0, 0, 0, 1),
                   fontSize: 19,
+                  fontFamily: 'MozillaText',
                   fontWeight: FontWeight.bold,
               )
             ),
@@ -71,6 +73,7 @@ const Histcultura ({super.key});
               Text('❗  CULTURA  ❗',
               style: TextStyle(
                 fontSize: 25,
+                fontFamily: 'MozillaText',
                 fontWeight: FontWeight.bold,
                 backgroundColor: Color.fromRGBO(0, 51, 146, 1),
                 color: Color.fromRGBO(243, 243, 243, 1)
@@ -84,6 +87,7 @@ const Histcultura ({super.key});
               style: TextStyle(
                   color: Color.fromRGBO(0, 0, 0, 1),
                   fontSize: 19,
+                  fontFamily: 'MozillaText',
                   fontWeight: FontWeight.bold,
               )
             ),
@@ -93,6 +97,7 @@ const Histcultura ({super.key});
               style: TextStyle(
                   color: Color.fromRGBO(0, 0, 0, 1),
                   fontSize: 19,
+                  fontFamily: 'MozillaText',
                   fontWeight: FontWeight.bold,
               )
             ),
@@ -102,6 +107,7 @@ const Histcultura ({super.key});
               style: TextStyle(
                   color: Color.fromRGBO(0, 0, 0, 1),
                   fontSize: 19,
+                  fontFamily: 'MozillaText',
                   fontWeight: FontWeight.bold,
               )
             ),
@@ -117,6 +123,8 @@ const Histcultura ({super.key});
           style: TextStyle(
               color: Colors.white,
               fontSize: 22,
+              fontFamily: 'MozillaText',
+              fontWeight: FontWeight.bold,
             ),),
         ),
 
