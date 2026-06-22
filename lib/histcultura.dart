@@ -30,7 +30,7 @@ const Histcultura ({super.key});
       body: SingleChildScrollView( child:
          Center(
           child:SizedBox(
-            height: 1380, // Limita a altura
+            height: 1450, // Limita a altura
             width: 400 , 
             child: Column(
            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
